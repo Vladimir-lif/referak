@@ -33,10 +33,10 @@
     // Инициализация Telegram Web App
     const tg = window.Telegram.WebApp;
 // Получаем данные пользователя
-        const user = tg.initDataUnsafe.user;
+    const user = tg.initDataUnsafe.user;
 
         // Функция для отображения информации о пользователе
-        function showProfile() {
+    function showProfile() {
             if (user) {
                 document.getElementById('profileFirstName').textContent = user.first_name || 'Не указано';
                 document.getElementById('profileLastName').textContent = user.last_name || 'Не указано';
