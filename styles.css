@@ -1,0 +1,74 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Применяем шрифт Montserrat ко всему документу */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #037B4E;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+    align-items: center; /* Выравниваем элементы по центру по горизонтали */
+    gap: 10px; /* Расстояние между кнопками */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #084276;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px; /* Фиксированная ширина кнопок для единообразия */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+    font-family: 'Montserrat', sans-serif; /* Применяем шрифт Montserrat */
+    font-weight: 500; /* Средняя насыщенность шрифта */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#profileButton {
+    background-color: #084276; /* Зеленый цвет для кнопки "Профиль" */
+}
+
+#profileButton:hover {
+    background-color: #0056b3;
+}
+
+#ratingButton {
+    background-color: #084276; /* Желтый цвет для кнопки "Рейтинг" */
+}
+
+#ratingButton:hover {
+    background-color: #0056b3;
+}
+
+#newsButton {
+    background-color: #084276; /* Красный цвет для кнопки "Новости" */
+}
+
+#newsButton:hover {
+    background-color: #0056b3;
+}
+
+#taskButton {
+    background-color: #084276; /* Фиолетовый цвет для кнопки "Задание" */
+}
+
+#taskButton:hover {
+    background-color: #0056b3;
+}
+
+#gamesButton {
+    background-color: #084276; /* Голубой цвет для кнопки "Игры" */
+}
+
+#gamesButton:hover {
+    background-color: #0056b3;
+}

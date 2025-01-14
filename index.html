@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-приложение с кнопкой</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <button id="activateButton">Активировать</button>
+         <button id="profileButton">Профиль</button>
+          <button id="ratingButton">Рейтинг</button>
+          <button id="newsButton">Новости</button>
+          <button id="taskButton">Задание</button>
+          <button id="gamesButton">Игры</button>
+    </div>
+
+    <script src="script.js"></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+    // Инициализация Telegram Web App
+    const tg = window.Telegram.WebApp;
+
+    // Показываем кнопку "Закрыть"
+    tg.MainButton.show();
+    tg.MainButton.setText("Закрыть");
+    tg.MainButton.onClick(() => tg.close());
+
+    // Пример использования данных пользователя
+    const user = tg.initDataUnsafe.user;
+    if (user) {
+        console.log("Пользователь:", user);
+        alert(`Привет, ${user.first_name}!`);
+    }
+</script>
+</body>
+</html>
